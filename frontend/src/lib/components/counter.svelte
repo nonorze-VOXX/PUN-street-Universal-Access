@@ -18,7 +18,7 @@
 <div class="m-3 p-3">
 	<BlueButton text="-" onclick={sub} />
 	<input
-		class="m-3 rounded-full bg-slate-500 p-3 text-center text-2xl text-blue-100"
+		class="m-3 rounded-full bg-slate-500 p-3 text-blue-100 text-center text-2xl "
 		type="text"
 		bind:value={count}
 	/>
