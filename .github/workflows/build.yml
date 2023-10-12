@@ -16,12 +16,4 @@ jobs:
         working-directory: ./frontend
         run: |
           npm install
-          npx prettier --write ./**/*.{ts,svelte}
-          npx prettier --write ./**/*.svelte
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
-        with:
-          commit_message: "style: format files"
+          npx prettier --check ./**/*.{ts,svelte}
