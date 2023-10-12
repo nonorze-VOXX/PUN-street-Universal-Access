@@ -12,6 +12,7 @@ jobs:
       - name: prettier
         working-directory: ./frontend
         run: |
+          pwd
           npx prettier . --check
       - name: Check for modified files
         id: git-check
