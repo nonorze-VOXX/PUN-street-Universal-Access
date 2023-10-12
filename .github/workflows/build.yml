@@ -16,4 +16,4 @@ jobs:
         working-directory: ./frontend
         run: |
           npm install
-          npx prettier --check ./**/*.{ts,svelte}
+          npm run lint
