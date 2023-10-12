@@ -16,7 +16,8 @@ jobs:
         working-directory: ./frontend
         run: |
           npm install
-          npx prettier --write ./**/*
+          npx prettier --write ./**/*.{ts,svelte}
+          npx prettier --write ./**/*.svelte
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
