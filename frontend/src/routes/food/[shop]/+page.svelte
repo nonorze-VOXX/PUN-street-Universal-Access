@@ -8,9 +8,7 @@
 	here is {shopName}
 </h1>
 <p>
-Visit <a 
-	href="./{shopName}/product1" class="text-blue-400"> Product1 </a></p>
-<p>Visit <a href="./{shopName}/product2" 
-	class="text-blue-400"> Product2 </a></p>
-<p>Visit <a href="./{shopName}/product3" 
-	class="text-blue-400"> Product3 </a></p>
+	Visit <a href="./{shopName}/product1" class="text-blue-400"> Product1 </a>
+</p>
+<p>Visit <a href="./{shopName}/product2" class="text-blue-400"> Product2 </a></p>
+<p>Visit <a href="./{shopName}/product3" class="text-blue-400"> Product3 </a></p>
