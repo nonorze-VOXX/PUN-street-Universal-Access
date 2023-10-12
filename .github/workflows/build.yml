@@ -6,14 +6,13 @@ jobs:
     if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
       - name: prettier
         working-directory: ./frontend
         run: |
           pwd
-          ls node_modules
           npx prettier . --check
       - name: Check for modified files
         id: git-check
