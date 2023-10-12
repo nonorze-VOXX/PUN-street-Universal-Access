@@ -13,8 +13,8 @@ jobs:
         working-directory: ./frontend
         run: |
           pwd
-          npm init 
-          npm install
+          npm init  -y
+          npm install -y
           npx prettier . --check
       - name: Check for modified files
         id: git-check
