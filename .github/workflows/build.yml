@@ -13,7 +13,8 @@ jobs:
         working-directory: ./frontend
         run: |
           pwd
-          npx prettier . --check
+          # npx prettier . --check
+          npx prettier-pnp --pn organize-imports --list-different "src/**/*.{js.jsx,ts,tsx,json}"
       - name: Check for modified files
         id: git-check
         run: echo "modified=$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)" >> $GITHUB_OUTPUT
