@@ -21,13 +21,7 @@ jobs:
           npm run lint
   build:
     runs-on: ubuntu-latest
-    name: build Check
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "16"
-      - name: docker
-        working-directory: ./
-        run: |
-          docker-compose up
+      - uses: actions/checkout@v2
+      - name: Build the stack
+        run: docker-compose up -d
